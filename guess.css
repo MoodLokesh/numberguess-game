@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #2ecc71;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:nth-of-type(1) {
+  background-color: #3498db;
+  color: white;
+}
+
+button:nth-of-type(2) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#message {
+  margin-top: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #34495e;
+  min-height: 40px;
+}
